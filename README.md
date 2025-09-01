@@ -1,28 +1,28 @@
-# Social Network Data Analysis
+# Coders Of Delhi
 
 ## Overview
-This project demonstrates fundamental data analysis techniques using pure Python, without relying on specialized data analysis libraries. It simulates a basic social network analysis by processing user connections and page interactions from JSON data.
+This project demonstrates fundamental data analysis techniques using pure Python, without relying on specialized data analysis libraries. It analyzes employee data from Coders Of Delhi, processing employee connections and page interactions from JSON data.
 
 ## Project Structure
 
-- `data.json` - Original dataset containing user and page information
+- `data.json` - Original dataset containing employee and page information
 - `data2.json` - Alternative dataset (used in some scripts)
 - `cleaned_data.json` - Processed dataset after cleaning operations
 - `Cleaning_data.py` - Script for data cleaning and preprocessing
-- `FindingPeopleYouMayKnow.py` - Algorithm to suggest potential connections
-- `FindingPagesYouMightLike.py` - Algorithm to recommend pages based on user interests
-- `load_user_data.py` - Utility script to load and display user information
+- `FindingPeopleYouMayKnow.py` - Algorithm to suggest potential colleague connections
+- `FindingPagesYouMightLike.py` - Algorithm to recommend pages based on employee interests
+- `load_user_data.py` - Utility script to load and display employee information
 
 ## Data Structure
 
 The dataset contains two main components:
 
-### Users
-Each user has:
+### Employees
+Each employee has:
 - `id` - Unique identifier
-- `name` - User's name
-- `friends` - List of user IDs representing connections
-- `liked_pages` - List of page IDs the user has liked
+- `name` - Employee's name
+- `friends` - List of employee IDs representing connections
+- `liked_pages` - List of page IDs the employee has liked
 
 ### Pages
 Each page has:
@@ -33,26 +33,26 @@ Each page has:
 
 ### Data Cleaning
 The `Cleaning_data.py` script performs several data cleaning operations:
-- Removes users with missing values
+- Removes employees with missing values
 - Eliminates duplicate friend connections
-- Removes inactive users (those without friends or liked pages)
+- Removes inactive employees (those without friends or liked pages)
 - Removes duplicate pages
 
-### Friend Recommendations
-The `FindingPeopleYouMayKnow.py` script implements a friend recommendation algorithm that:
-- Identifies friends-of-friends who aren't already connected
-- Ranks potential connections based on the number of mutual friends
+### Colleague Recommendations
+The `FindingPeopleYouMayKnow.py` script implements a colleague recommendation algorithm that:
+- Identifies colleagues-of-colleagues who aren't already connected
+- Ranks potential connections based on the number of mutual colleagues
 - Returns a sorted list of recommended connections
 
 ### Page Recommendations
 The `FindingPagesYouMightLike.py` script implements a page recommendation algorithm that:
-- Analyzes pages liked by users with similar interests
+- Analyzes pages liked by employees with similar interests
 - Ranks potential page recommendations based on shared interests
 - Returns a sorted list of recommended pages
 
 ### Data Visualization
 The `load_user_data.py` script provides a simple text-based visualization of:
-- Users and their connections
+- Employees and their connections
 - Page information
 
 ## How to Use
@@ -73,7 +73,7 @@ This project demonstrates:
 - JSON data handling
 - Implementation of recommendation algorithms
 - Data cleaning and preprocessing
-- Social network analysis concepts
+- Employee network analysis concepts
 
 ## Requirements
 
